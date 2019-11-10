@@ -1,0 +1,3 @@
+[submodule "packages/label-studio"]
+	path = packages/label-studio
+	url = git@github.com:hyunrealshadow/label-studio.git

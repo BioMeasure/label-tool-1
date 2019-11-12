@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card, Col, Row } from 'antd'
 import styles from './index.less'
+import 'label-studio/es'
+import { ToolIcon } from '@/components/icon'
 
 export default function Index(): JSX.Element {
   return (
@@ -11,7 +13,10 @@ export default function Index(): JSX.Element {
           <Card>图像标注</Card>
         </Col>
         <Col className={styles.moduleItem} span={8}>
-          <Card>通用工具</Card>
+          <Card>
+            <ToolIcon />
+            通用工具
+          </Card>
         </Col>
         <Col className={styles.moduleItem} span={8} />
       </Row>

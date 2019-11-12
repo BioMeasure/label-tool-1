@@ -7,7 +7,7 @@
 /package-lock.json
 
 # production
-/dist
+dist/
 
 # misc
 .DS_Store
@@ -15,4 +15,6 @@
 # umi
 .umi
 .umi-production
-node_modules
+node_modules/
+
+webpack.config.json

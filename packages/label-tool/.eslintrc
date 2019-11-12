@@ -77,10 +77,12 @@
     "react/prefer-stateless-function": "off"
   },
   "plugins": ["@typescript-eslint", "import", "promise", "compat", "react"],
-  "overrides": [{
-    "files": ["**/*.tsx"],
-    "rules": {
-      "react/prop-types": "off"
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
     }
-  }]
+  ]
 }

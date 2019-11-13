@@ -2,16 +2,10 @@ import { IConfig } from 'umi-types'
 
 // ref: https://umijs.org/config/
 const config: IConfig = {
+  history: 'hash',
   outputPath: `../../dist/renderer`,
   publicPath: './',
   treeShaking: true,
-  routes: [
-    {
-      path: '/',
-      component: '../layouts/index',
-      routes: [{ path: '/', component: '../pages/index' }]
-    }
-  ],
   cssLoaderOptions: {
     camelCase: true
   },

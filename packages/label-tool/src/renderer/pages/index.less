@@ -1,13 +1,40 @@
+@import '~antd/es/style/themes/default';
+
 .title {
-  margin: 100px 0;
-  text-align: center;
+  margin: 40px 54px;
+  text-align: left;
 }
 
 .module {
-  margin: 0 8px !important;
+  margin: 0 48px !important;
+  margin-left: 32px !important;
 }
 
 .module-item {
   margin: 0 auto;
   text-align: center;
+
+  .module-content {
+    transition: all 300ms ease 0ms;
+
+    &:hover {
+      cursor: pointer;
+      color: @primary-6;
+      box-shadow: 0 4px 12px 0 rgba(0, 5, 13, 0.1);
+    }
+
+    &:hover.disabled {
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+  }
+
+  .module-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .disabled {
+    user-select: none;
+  }
 }

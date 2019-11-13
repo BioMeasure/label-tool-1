@@ -11,7 +11,8 @@ function createWindow(): void {
     width: 1024,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    autoHideMenuBar: true
   })
 
   setApplicationMenu()
@@ -22,9 +23,10 @@ function createWindow(): void {
     mainWindow.loadURL('http://localhost:8000/#/')
     mainWindow.webContents.openDevTools({ mode: 'undocked' })
   } else {
+    console.log(__dirname)
     mainWindow.loadURL(
       url.format({
-        pathname: path.join(__dirname, './dist/renderer/index.html'),
+        pathname: path.join(__dirname, '../renderer/index.html'),
         protocol: 'file:',
         slashes: true
       })

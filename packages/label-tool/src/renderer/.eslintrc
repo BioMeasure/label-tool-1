@@ -1,3 +1,10 @@
 {
-  "extends": ["eslint-config-umi", "../../.eslintrc"]
+  "extends": ["eslint-config-umi", "../../.eslintrc", "plugin:import/typescript"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "directory": "src/renderer"
+      }
+    }
+  }
 }
